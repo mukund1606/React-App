@@ -7,6 +7,12 @@ function Avenger(props) {
         disappear("avengersdetail" + props.index);
     }
     function appear(e) {
+        for (let i = 0; i < props.total; i++) {
+            let dat = document.getElementsByClassName("avengersdetail" + i)
+            dat[0].style.zIndex = -1;
+            dat[0].style.visibility = "hidden";
+            dat[0].style.opacity = 0;
+        }
         let dat = document.getElementsByClassName(e)
         dat[0].style.zIndex = 999;
         dat[0].style.visibility = "visible";
