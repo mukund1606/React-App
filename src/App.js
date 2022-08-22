@@ -44,7 +44,7 @@ function App() {
     return (
         <>
             <div className='header'>
-                <h1>Marvel Library</h1>
+                <h1>Character Library</h1>
                 <i className="fas fa-plus-square" onClick={addchar}></i>
             </div>
             <Add visibility={vis[1]} hide={hide} margin={vis[0]} data={change} />
